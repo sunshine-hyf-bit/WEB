@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+
+spring:
+  application:
+    name: basic-application
+
+  # MySQL 数据源配置
+  datasource:
+      url: jdbc:sqlite:C:\Users\Administrator\web.db
+      driver-class-name: org.sqlite.JDBC
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
